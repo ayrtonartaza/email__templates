@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    margin-left: 22px;
+    font-family: 'Lato', sans-serif; 
+}
+h1{
+    font-family: 'Lato', sans-serif; 
+    font-size: 18px;
+    margin-top: 12px;
+    font-weight: 600;
+    color: rgb(3, 3, 41);
+     
+}
+.container{
+    width: 100%;
+    
+   /*  display: grid; */
+   /*  grid-template-columns: 1fr 1fr 1fr; */
+    padding-top: 16px;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-flow: column nowrap;
+    font-family: 'Lato', sans-serif;
+    border-radius: 12px;
+    width: 33%;
+    border: 1px solid rgba(231, 224, 224, .8);
+    box-shadow: 3px 3px 6px  rgba(231, 224, 224, 1);
+    padding-bottom: 20px;
+    transition: width .2s ease;
+}
+.card:hover{
+    transition: width .2s ease;
+    width: 33.2%;
+    box-shadow: 2px 2px 12px rgba(90, 90, 97, 0.3);
+}
+.card img{
+    width: 100%;
+    height: 280px;
+    border-radius: 12px 12px 0px 0px;
+}
+.card .info{
+    padding: 12px;
+    text-align: left;
+}
+.card .info h2 {
+    padding-bottom: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(3, 3, 41);
+}
+.card .info span {
+    font-size: 16px;
+    color: rgb(72, 72, 83);
+}
+.card .enlaces {
+    padding: 12px;
+}
+.card .enlaces a{
+    padding: 12px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+.card .enlaces .preview {
+    background-color: #1890FF;
+    color: #ffffff;
+}
+.card .enlaces .github {
+    margin-left: 12px;
+    background-color: #ffffff;
+    border: 1px solid #1890FF;
+    color:  #1890FF;
+}
+footer {
+    margin: 44px auto 4px auto;
+}
+footer a {
+    text-decoration: none;
+    color: #1890FF;
+}
+@media screen and (max-width:800px){
+    .card{
+        width: 50%;
+    }
+     .card .info h2 {
+        padding-bottom: 8px;
+       font-size: 12px;
+    }
+    .card .info span {
+        font-size: 14px;  
+    } 
+   
+}
+
+@media screen and (max-width:720px){
+    .card{
+        width: 100%;
+    }
+    
+   
+}
