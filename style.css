@@ -9,6 +9,7 @@ body{
     justify-content: center;
     flex-flow: column nowrap;
     margin-left: 22px;
+    margin-right: 22px;
     font-family: 'Lato', sans-serif; 
 }
 
